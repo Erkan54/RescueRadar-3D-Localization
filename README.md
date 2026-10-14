@@ -70,3 +70,15 @@ Proje için belirtilen Uluslararası Patent Sınıflandırma (IPC) alanları: `H
 ## Lisans ve kapsam
 
 Bu depoda yayımlanan bağımsız örnek kaynaklar MIT lisanslıdır. Lisans, özel kaynak depolarına veya yayımlanmayan RescueRadar sistemine izin vermez; açık örnek üretim sisteminin uygulanması veya saha performansı iddiası değildir.
+
+## Örnek modül dosya haritası
+
+| Dosya | İçerik |
+| --- | --- |
+| [`src/KalmanRSSIFilter.hpp`](src/KalmanRSSIFilter.hpp) | Filtre yapılandırması, sonuç durumları ve mesafe modeli arayüzü |
+| [`src/KalmanRSSIFilter.cpp`](src/KalmanRSSIFilter.cpp) | Kalman güncellemesi, aykırı değer kapısı ve girdi doğrulama |
+| [`examples/esp32_rssi_smoothing.cpp`](examples/esp32_rssi_smoothing.cpp) | Sentetik RSSI dizisiyle masaüstü gösterimi |
+| [`tests/kalman_test.cpp`](tests/kalman_test.cpp) | Filtre davranışı ve hatalı girdiler |
+| [`CMakeLists.txt`](CMakeLists.txt) | C++11 kütüphane, demo ve CTest hedefleri |
+
+Bu dosya haritası açık eğitim örneğinin kapsamıdır; ESP32 firmware veya ağırlıklı 3D nirengi motorunun kaynak dağıtımı değildir.
